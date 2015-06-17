@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myMenuApp">
+
+<head>
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:500,700' rel='stylesheet' type='text/css'>
+  <link data-require="angular-material@0.9.0" data-semver="0.9.4" rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.9.4/angular-material.min.css" />
+  <link data-require="font-awesome@4.3.0" data-semver="4.3.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div>
+  <div flex="" ui-view=""></div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+
+<!--my scripts-->
+<script src="app.routes.js"></script>
+<script src="app.modules.js"></script>
+<script src="services/menu.service.js"></script>
+<script src="controllers/home.controller.js"></script>
+<script src="directives/menu_toggle.directive.js"></script>
+<script src="directives/menulink.directive.js"></script>
+</body>
+
+</html>

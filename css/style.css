@@ -1,0 +1,92 @@
+/* Styles go here */
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: orangered;
+}
+
+md-sidenav {
+  height: 1000px;
+}
+.side-menu, .side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 0;
+}
+
+.side-menu .md-button.active {
+  color: deeppink;
+}
+
+.side-menu .menu-toggle-list a.md-button {
+  display: block;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  font-weight: 500;
+}
+
+.side-menu .menu-toggle-list .md-button {
+  display: block;
+  padding: 0 16px 0 32px;
+  text-transform: none;
+}
+
+.side-menu > li {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.md-button-toggle .md-toggle-icon.toggled {
+  transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg);
+}
+
+.side-menu .md-button-toggle .md-toggle-icon {
+  background-size: 100% auto;
+  display: inline-block;
+  margin: auto 0 auto auto;
+  width: 15px;
+  color: darkgray;
+  transition: transform .3s ease-in-out;
+  -webkit-transition: -webkit-transform .3s ease-in-out;
+}
+
+.menu-toggle-list.ng-hide {
+  max-height: 0;
+}
+
+.side-menu .md-button {
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  max-height: 40px;
+  overflow: hidden;
+  padding: 0px 16px;
+  text-align: left;
+  text-decoration: none;
+  white-space: normal;
+  width: 100%;
+}
+
+.menu-toggle-list {
+  background: #fff;
+  max-height: 1300px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -webkit-transition-property: max-height;
+  -moz-transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  -moz-transition-property: max-height;
+  transition: 0.75s cubic-bezier(0.35, 0, 0.25, 1);
+  transition-property: max-height;
+}
+
+
+.side-menu menu-toggle span{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
