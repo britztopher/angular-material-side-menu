@@ -1,2 +1,2 @@
 # angular-material-side-menu
-This is recreation of the Angular Material Side menu from their site [Angular Material 0.10.0](https://material.angularjs.org/0.10.0/#/).  This is mainly for a blog post I am writing, but this can be used in any application you like.
+This is recreation of the Angular Material Side menu from their site [Angular Material 0.10.0](https://material.angularjs.org/0.10.0/#/).  This is mainly for a blog post ([How to make an Angular Material side Menu](http://brilliantbritz.com/2015/06/17/creating-your-own-angular-material-right-navigation-menu/)) I am writing, but this can be used in any application you like.
