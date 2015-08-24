@@ -1,6 +1,5 @@
 <div layout="row">
-  <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')"
-              flex="15">
+  <md-sidenav class="md-sidenav-left md-whiteframe-z1" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
     <md-toolbar md-scroll-shrink>
       <div class="md-toolbar-tools">
         <h3>
@@ -8,7 +7,7 @@
         </h3>
       </div>
     </md-toolbar>
-    <md-content flex role="navigation">
+    <md-content role="navigation">
       <ul class="side-menu">
         <li ng-repeat="section in vm.menu.sections" class="parent-list-item"
             ng-class="{'parentActive' : vm.isSectionSelected(section)}">

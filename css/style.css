@@ -5,8 +5,20 @@ body {
   color: orangered;
 }
 
+.fill-height{
+  display: flex;
+  flex: 1;
+  min-height: 100%;
+}
+
+.fill-height > div{
+  min-height: 100%;
+  display: flex;
+}
+
 md-sidenav {
-  height: 1000px;
+  overflow: visible;
+  
 }
 .side-menu, .side-menu ul {
   list-style: none;

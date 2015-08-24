@@ -1,10 +1,4 @@
 
-
-
-
-
-
-
 (function(){
   angular.module('common.directives')
     .run(['$templateCache', function($templateCache){
