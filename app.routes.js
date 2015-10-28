@@ -38,6 +38,50 @@
               }
             }
           })
+          .state('home.gettingstarted', {
+            url: '/gettingstarted',
+
+            views: {
+
+              'content@home': {
+                templateUrl: 'views/gettingstarted.view.html'
+              }
+            }
+          })
+          .state('home.beers', {
+            url: 'beers',
+            abstract: true
+          })
+          .state('home.beers.ipas', {
+            url: '/ipas',
+
+            views: {
+
+              'content@home': {
+                templateUrl: 'views/beers.ipas.view.html'
+              }
+            }
+          })
+          .state('home.beers.porters', {
+            url: '/porters',
+
+            views: {
+
+              'content@home': {
+                templateUrl: 'views/beers.porters.view.html'
+              }
+            }
+          })
+          .state('home.beers.wheat', {
+            url: '/porters',
+
+            views: {
+
+              'content@home': {
+                templateUrl: 'views/beers.wheat.view.html'
+              }
+            }
+          })
       }])
     //take all whitespace out of string
     .filter('nospace', function () {

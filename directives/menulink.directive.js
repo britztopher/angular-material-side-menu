@@ -4,8 +4,8 @@
   angular.module('common.directives')
     .run(['$templateCache', function ($templateCache) {
       $templateCache.put('partials/menu-link.tmpl.html',
-        '<md-button ng-class="{\'{{section.icon}}\' : true}" \n' +
-        ' ng-click="focusSection()">\n' +
+        '<md-button ng-class="{\'{{section.icon}}\' : true}" ui-sref-active="active" \n' +
+        '  ui-sref="{{section.state}}" ng-click="focusSection()">\n' +
         '  {{section | humanizeDoc}}\n' +
         '  <span  class="md-visually-hidden "\n' +
         '    ng-if="isSelected()">\n' +
