@@ -5,6 +5,7 @@
   angular.module('common.services')
     .factory('menu', [
       '$location',
+      '$rootScope',
       function ($location) {
 
         var sections = [{
@@ -19,17 +20,17 @@
           pages: [{
             name: 'IPAs',
             type: 'link',
-            state: 'beers.ipas',
+            state: 'home.beers.ipas',
             icon: 'fa fa-group'
           }, {
             name: 'Porters',
-            state: 'home.toollist',
+            state: 'home.beers.porters',
             type: 'link',
             icon: 'fa fa-map-marker'
           },
             {
               name: 'Wheat',
-              state: 'home.createTool',
+              state: 'home.beers.wheat',
               type: 'link',
               icon: 'fa fa-plus'
             }]
@@ -41,22 +42,21 @@
           pages: [{
             name: 'Cheetos',
             type: 'link',
-            state: 'home.findwood',
+            state: 'munchies.cheetos',
             icon: 'fa fa-group'
           }, {
             name: 'Banana Chips',
-            state: 'home.woodlist',
+            state: 'munchies.bananachips',
             type: 'link',
             icon: 'fa fa-map-marker'
           },
             {
               name: 'Donuts',
-              state: 'home.woodlow',
+              state: 'munchies.donuts',
               type: 'link',
               icon: 'fa fa-map-marker'
             }]
         });
-
 
         var self;
 
@@ -76,6 +76,12 @@
             self.currentPage = page;
           }
         };
+
+        function sortByHumanName(a, b) {
+          return (a.humanName < b.humanName) ? -1 :
+            (a.humanName > b.humanName) ? 1 : 0;
+        }
+
       }])
 
 })();
